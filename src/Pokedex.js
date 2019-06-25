@@ -6,39 +6,64 @@ class Pokedex extends Component {
     pokemon: [
       {
         id: 4, name: 'Charmander', type: 'Fire', base_experience: 62,
-        moves: [ 'fire-punch', 'scratch', 'swords-dance', 'bite' ]
+        moves: [ 'Fire-punch', 'Scratch', 'Swords-dance', 'Bite' ]
       },
 
       {
         id: 7, name: 'Squirtle', type: 'Water', base_experience: 63,
-        moves: [ 'bubble-beam', 'headbutt', 'bite', 'withdraw' ]
+        moves: [ 'Bubblebeam', 'Headbutt', 'Bite', 'Withdraw' ]
       },
       {
         id: 12, name: 'Butterfree', type: 'Flying', base_experience: 178,
-        moves: [ 'psychic', 'sleep-powder', 'supersonic', 'gust' ]
+        moves: [ 'Psychic', 'Sleep-powder', 'Supersonic', 'Gust' ]
       },
       {
         id: 19, name: 'Rattata', type: 'Normal', base_experience: 72,
-        moves: [ 'body-slam', 'quick-attack', 'bite', 'tail-whip' ]
+        moves: [ 'Body-slam', 'Quick-attack', 'Bite', 'Tail-whip' ]
       },
       {
         id: 25, name: 'Pikachu', type: 'Electric', base_experience: 112,
-        moves: [ 'thunderbolt', 'quick-attack', 'tail-whip', 'thunder-wave' ]
+        moves: [ 'Thunderbolt', 'Quick-attack', 'Tail-whip', 'Thunder-wave' ]
       },
       {
         id: 39, name: 'Jigglypuff', type: 'Normal', base_experience: 95,
-        moves: [ 'pound', 'sing', 'mimic', 'defense-curl' ]
+        moves: [ 'Pound', 'Sing', 'Mimic', 'Defense-curl' ]
       },
       {
         id: 94, name: 'Gengar', type: 'Poison', base_experience: 225,
-        moves: [ 'psywave', 'dream-eater', 'toxic', 'nightmare' ]
+        moves: [ 'Psywave', 'Dream-eater', 'Toxic', 'Nightmare' ]
       },
       {
         id: 133, name: 'Eevee', type: 'Normal', base_experience: 65,
-        moves: [ 'sand-attack', 'tackle', 'bite', 'tail-whip' ]
+        moves: [ 'Sand-attack', 'Tackle', 'Bite', 'Tail-whip' ]
       },
     ]
   };
+
+  render() {
+    return (
+      <div className="Pokedex">
+        <div className="Pokedex__pokecard-container">
+          { this.props.pokemon.map((p) => (
+            <Pokecard
+              id={ p.id }
+              name={ p.name }
+              type={ p.type }
+              xp={ p.base_experience }
+              moves={p.moves}
+            />
+
+          )) }
+
+        </div>
+
+      </div>
+    );
+  }
+}
+
+export default Pokedex;
+
 
   /*
    * IDs     a
@@ -51,26 +76,3 @@ class Pokedex extends Component {
    *  bellsprout: 69
    *  poliwag:    60
    *  */
-
-  render() {
-    return (
-      <div className="Pokedex">
-
-        { this.props.pokemon.map((p) => (
-          <Pokecard
-            id={ p.id }
-            name={ p.name }
-            type={ p.type }
-            xp={ p.base_experience }
-            moves={p.moves}
-          />
-
-        )) }
-
-      </div>
-    );
-  }
-}
-
-export default Pokedex;
-

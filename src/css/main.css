@@ -11,35 +11,59 @@ html {
 body {
   box-sizing: border-box; }
 
+/* Begin Pokecard Component */
 .Pokecard {
+  background-color: #EFEFEF;
   border: 2px solid black;
-  height: 20rem;
-  width: 15rem;
-  color: red; }
+  border-radius: 5px;
+  box-shadow: 3px 5px 10px black;
+  height: 30rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 20rem;
+  min-width: 20rem; }
+  .Pokecard__name {
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    margin: 2rem 0 1rem 0; }
+  .Pokecard__img--wrapper {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0 auto; }
+  .Pokecard__img--Fire {
+    background-image: radial-gradient(white, #f35d2f); }
+  .Pokecard__img--Water {
+    background-image: radial-gradient(white, #0e7ee1); }
+  .Pokecard__img--Flying {
+    background-image: radial-gradient(white, #4ccce1); }
+  .Pokecard__img--Normal {
+    background-image: radial-gradient(white, #a5a5a5); }
+  .Pokecard__img--Electric {
+    background-image: radial-gradient(white, #e2dc42); }
+  .Pokecard__img--Poison {
+    background-image: radial-gradient(white, #b044e1); }
+  .Pokecard__moves {
+    margin: 1rem; }
+  .Pokecard .moves {
+    border: 1px solid black; }
+    .Pokecard .moves__body {
+      background-color: white;
+      border: 1px solid black;
+      margin-top: 3px; }
+    .Pokecard .moves__move {
+      margin: 3px 0; }
+  .Pokecard__stats {
+    height: 5rem;
+    padding: .5rem;
+    text-align: center; }
+    .Pokecard__stats * {
+      bottom: 0;
+      display: inline;
+      margin: 0 1rem; }
 
-.App {
-  text-align: center; }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none; }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Pokedex__pokecard-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white; }
-
-.App-link {
-  color: #61dafb; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+  flex-wrap: wrap;
+  justify-content: space-evenly; }

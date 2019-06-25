@@ -1,4 +1,14 @@
-
-/* Pokecard component */
+// Pokecard component
 $pokecard__height: 30rem;
 $pokecard__width: 20rem;
+
+// pokecard colors
+$pokecard__background--color: #EFEFEF;
+
+// pokemon type colors
+$color__red--fire:          rgb(243, 93, 47);
+$color__blue--water:        rgb(14, 126, 225);
+$color__blue--flying:       rgb(76, 204, 225);
+$color__grey--normal:       rgb(165, 165, 165);
+$color__yellow--electric:   rgb(226, 220, 66);
+$color__purple--poison:     rgb(176, 68, 225);
