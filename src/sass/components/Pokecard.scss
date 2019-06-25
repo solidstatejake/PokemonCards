@@ -1,0 +1,51 @@
+.Pokecard {
+    border:     2px solid black;
+    height:     $pokecard__height;
+    margin:     20px auto;
+    text-align: center;
+    width:      $pokecard__width;
+
+    &__name {
+        border:     1px solid black;
+        display:    inline-block;
+        padding:    .5rem 1.5rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    &__img {
+
+        &--wrapper {
+            width: 80%;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        &--Fire{
+            background-image: radial-gradient(white, rgb(243, 93, 47));
+        }
+
+        &--Water {
+            background-image: radial-gradient(white, rgb(14, 126, 225));
+        }
+
+        &--Flying {
+            background-image: radial-gradient(white, rgb(76, 204, 225));
+
+        }
+
+        &--Normal {
+            background-image: radial-gradient(white, rgb(165, 165, 165));
+
+        }
+
+        &--Electric {
+            background-image: radial-gradient(white, rgb(226, 220, 66));
+
+        }
+
+        &--Poison {
+            background-image: radial-gradient(white, rgb(176, 68, 225));
+
+        }
+    }
+}
