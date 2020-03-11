@@ -8,7 +8,6 @@ const POKE_API = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprit
 // let padPokemonId = (number) => (number <= 999 ? `00${number}`.slice(-3) : number);
 
 class Pokecard extends Component {
-
   render() {
 
     const props = this.props;

@@ -1,17 +1,17 @@
 *,
 *::after,
 *::before {
-    margin:     0;
-    padding:    0;
-    box-sizing: inherit;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : inherit;
 }
 
 html {
-    // This `font-size` determines what 1rem is. All uses of `rem`
-    // throughout the project are based on this `font-size`.
-    font-size: 62.5%;
+  // This `font-size` determines what 1rem is. All uses of `rem`
+  // throughout the project are based on this `font-size`.
+  font-size : 62.5%;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing : border-box;
 }
